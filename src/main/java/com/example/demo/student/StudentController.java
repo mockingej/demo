@@ -9,7 +9,7 @@ import java.util.Arrays;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/api/v1/students/")
+@RequestMapping(value = "/api/v1/students")
 public class StudentController {
 
     List<Student> STUDENTS = Arrays.asList(
@@ -26,6 +26,4 @@ public class StudentController {
                 .findFirst()
                 .orElseThrow(() -> new IllegalStateException("Student " + id + " does not exists"));
     }
-
-
 }
