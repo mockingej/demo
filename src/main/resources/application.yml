@@ -1,0 +1,7 @@
+application:
+  jwt:
+    key: 'somethingverysecure@(U$@NIOLSsomethingverysecure!SA@$A24qs=-l-='
+    prefix: 'Bearer '
+    expiration: 14
+
+
