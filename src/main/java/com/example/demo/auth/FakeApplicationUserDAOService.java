@@ -26,7 +26,8 @@ public class FakeApplicationUserDAOService implements ApplicationUserDAO {
     }
 
     private List<ApplicationUser> getApplicationUsers() {
-        List<ApplicationUser> applicationUsers = Lists.newArrayList(
+
+        return Lists.newArrayList(
                 new ApplicationUser(
                         "annasmith",
                         passwordEncoder.encode("password"),
@@ -55,7 +56,5 @@ public class FakeApplicationUserDAOService implements ApplicationUserDAO {
                         true
                 )
         );
-
-        return applicationUsers;
     }
 }
